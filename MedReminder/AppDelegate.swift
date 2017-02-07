@@ -60,23 +60,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    func application(application: UIApplication!, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings!) {
+    func application(_ application: UIApplication, didRegister notificationSettings: UIUserNotificationSettings) {
         // inspect notificationSettings to see what the user said!
         //RCTPushNotificationManager.didRegisterUserNotificationSettings(notificationSettings)
     }
     
-    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         //RCTPushNotificationManager.didRegisterForRemoteNotificationsWithDeviceToken(deviceToken)
     }
     
-    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]){
+    private func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]){
         //RCTPushNotificationManager.didReceiveRemoteNotification(userInfo, completionHandler)
     }
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         //RCTPushNotificationManager.didFailToRegisterForRemoteNotificationsWithError(error)
     }
-    func application(application: UIApplication!, didReceiveLocalNotification notification: UILocalNotification!) {
+    func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
         //RCTPushNotificationManager.didReceiveLocalNotification(notification)
     }
 }
