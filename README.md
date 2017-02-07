@@ -1,10 +1,12 @@
 # MedReminder
 
-1) Open Terminal, go to your project folder and inside folder "js":
+1) Clone or download project
+
+2) Open Terminal, go to your project folder and inside folder "js":
 
     cd Documents / MyProjects / MedReminder / js, for example
 
-2) Install npm:
+3) Install npm:
 
     brew install node
 
@@ -14,29 +16,29 @@
 
     npm install
 
-3) Install module for push notifications
+4) Install module for push notifications
 
     npm install react-native-push-notification
 
     react-native link
 
-4) Go to your main project folder
+5) Go to your main project folder
 
     cd ..
 
-5) Install pods
+6) Install pods
 
    pod install
 
-6) Go again to folder "js" inside your project folder and start npm with command:
+7) Go again to folder "js" inside your project folder and start npm with command:
 
     npm start
 
-7) Open MedReminder.xcworkspace in XCode
+8) Open MedReminder.xcworkspace in XCode
 
-8) Press Command + R
+9) Press Command + R
 
-9) Enjoy)
+10) Enjoy)
 
 During realization this project I had a lot of problems, because I've never used before React Native and Firebase.
 And I decided to use Swift 3 because I've never wrote on Swift and it was a chance to try it. // I like big troubles :)
